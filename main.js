@@ -234,7 +234,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _script_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.service */ "./src/app/script.service.ts");
 /* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
 /* harmony import */ var _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/classes/dom-element.classes */ "./src/shared/classes/dom-element.classes.ts");
-/// <reference types="@types/googlemaps" />
+/* harmony import */ var _shared_classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/classes/clusterer-markers.classes */ "./src/shared/classes/clusterer-markers.classes.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -244,6 +244,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/// <reference types="@types/googlemaps" />
+
 
 
 
@@ -294,6 +296,7 @@ var GoogleMapDirective = /** @class */ (function () {
         this._scriptService.load(uri).subscribe(function () {
             _this.initialMap();
             _this.initialSearchBox();
+            _this._clustererMarkers = new _shared_classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_4__["ClustererMarkers"](_this._map);
             _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._labelButton.element);
             _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._lineButton.element);
             _this._map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(_this._filterButton.element);
@@ -338,9 +341,11 @@ var GoogleMapDirective = /** @class */ (function () {
         var _this = this;
         this._map.addListener('bounds_changed', function () {
             _this._searchBox.setBounds(_this._map.getBounds());
+            _this.updateClasters();
         });
         this._map.addListener('click', function (e) {
-            _this.placeMarkerAndPanTo(e.latLng);
+            var marker = _this.placeMarker(e.latLng);
+            _this._markers.push(marker);
         });
         this._searchBox.addListener('places_changed', function () {
             var places = _this._searchBox.getPlaces();
@@ -351,7 +356,7 @@ var GoogleMapDirective = /** @class */ (function () {
         this._filterButton.addEvent('click', function () { return console.log('_filterButton'); });
         this._input.addEvent('input', function (event) { return console.log(event.target.value); });
     };
-    GoogleMapDirective.prototype.placeMarkerAndPanTo = function (latLng) {
+    GoogleMapDirective.prototype.placeMarker = function (latLng) {
         var marker = new google.maps.Marker({
             icon: {
                 // github icon >_<
@@ -365,11 +370,14 @@ var GoogleMapDirective = /** @class */ (function () {
             position: latLng,
             map: this._map
         });
-        this._markers.push(marker);
-        var options = {
-            imagePath: 'assets/images/m'
-        };
-        new MarkerClusterer(this._map, this._markers, options);
+        return marker;
+    };
+    GoogleMapDirective.prototype.updateClasters = function () {
+        var _a;
+        if (this._markers !== []) {
+            (_a = this._clustererMarkers).addMarkers.apply(_a, this._markers);
+            this._markers = [];
+        }
     };
     GoogleMapDirective = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
@@ -497,6 +505,45 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
 }
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.error(err); });
+
+
+/***/ }),
+
+/***/ "./src/shared/classes/clusterer-markers.classes.ts":
+/*!*********************************************************!*\
+  !*** ./src/shared/classes/clusterer-markers.classes.ts ***!
+  \*********************************************************/
+/*! exports provided: ClustererMarkers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClustererMarkers", function() { return ClustererMarkers; });
+var ClustererMarkers = /** @class */ (function () {
+    function ClustererMarkers(_map, _markers) {
+        this._map = _map;
+        this._markers = _markers;
+        if (!this._markers) {
+            this._markers = [];
+        }
+        var options = {
+            imagePath: 'assets/images/m'
+        };
+        this._markerClusterer = new MarkerClusterer(this._map, this._markers, options);
+    }
+    ClustererMarkers.prototype.addMarkers = function () {
+        var _this = this;
+        var markers = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            markers[_i] = arguments[_i];
+        }
+        markers.forEach(function (m) {
+            _this._markerClusterer.addMarker(m);
+        });
+    };
+    return ClustererMarkers;
+}());
+
 
 
 /***/ }),
