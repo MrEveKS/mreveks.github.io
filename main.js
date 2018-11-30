@@ -234,6 +234,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _script_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.service */ "./src/app/script.service.ts");
 /* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
 /* harmony import */ var _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/classes/dom-element.classes */ "./src/shared/classes/dom-element.classes.ts");
+/// <reference types="@types/googlemaps" />
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -243,7 +244,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/// <reference types="@types/googlemaps" />
 
 
 
@@ -255,6 +255,7 @@ var GoogleMapDirective = /** @class */ (function () {
         this._configService = _configService;
         this._configFile = '/assets/map.config.json';
         this._element = elRef.nativeElement;
+        this._markers = [];
     }
     GoogleMapDirective.prototype.ngOnInit = function () {
         var _this = this;
@@ -364,6 +365,11 @@ var GoogleMapDirective = /** @class */ (function () {
             position: latLng,
             map: this._map
         });
+        this._markers.push(marker);
+        var options = {
+            imagePath: 'assets/images/m'
+        };
+        new MarkerClusterer(this._map, this._markers, options);
     };
     GoogleMapDirective = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
