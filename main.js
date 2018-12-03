@@ -67,7 +67,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* test */\r\n.map-container {\r\n  width: 100%;\r\n  height: 500px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsVUFBVTtBQUNWO0VBQ0UsWUFBWTtFQUNaLGNBQWM7Q0FDZiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogdGVzdCAqL1xyXG4ubWFwLWNvbnRhaW5lciB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiA1MDBweDtcclxufVxyXG4iXX0= */"
+module.exports = ":host,\r\n.map-container {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsWUFBWTtFQUNaLGFBQWE7Q0FDZCIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3QsXHJcbi5tYXAtY29udGFpbmVyIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuXHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -78,7 +78,7 @@ module.exports = "/* test */\r\n.map-container {\r\n  width: 100%;\r\n  height: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    Welcome to {{ title }}!\r\n  </h1>\r\n\r\n  <div class=\"map-container\" appGoogleMap></div>\r\n</div>\r\n\r\n"
+module.exports = "<div class=\"map-container\" appGoogleMap></div>\r\n\r\n"
 
 /***/ }),
 
@@ -132,8 +132,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _google_map_directive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./google-map.directive */ "./src/app/google-map.directive.ts");
+/* harmony import */ var _shared_directives_google_map_directive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/directives/google-map.directive */ "./src/shared/directives/google-map.directive.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -152,8 +152,8 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _google_map_directive__WEBPACK_IMPORTED_MODULE_5__["GoogleMapDirective"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _shared_directives_google_map_directive__WEBPACK_IMPORTED_MODULE_4__["GoogleMapDirective"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -161,294 +161,10 @@ var AppModule = /** @class */ (function () {
                 _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/config.service.ts":
-/*!***********************************!*\
-  !*** ./src/app/config.service.ts ***!
-  \***********************************/
-/*! exports provided: ConfigService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfigService", function() { return ConfigService; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var ConfigService = /** @class */ (function () {
-    function ConfigService(_http, _location) {
-        this._http = _http;
-        this._location = _location;
-    }
-    ConfigService.prototype.load = function (configFile) {
-        return this._http.get(this._location.prepareExternalUrl(configFile)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (res) { console.log(res); return res; }));
-    };
-    ConfigService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"]])
-    ], ConfigService);
-    return ConfigService;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/google-map.directive.ts":
-/*!*****************************************!*\
-  !*** ./src/app/google-map.directive.ts ***!
-  \*****************************************/
-/*! exports provided: GoogleMapDirective */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleMapDirective", function() { return GoogleMapDirective; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _script_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.service */ "./src/app/script.service.ts");
-/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
-/* harmony import */ var _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/classes/dom-element.classes */ "./src/shared/classes/dom-element.classes.ts");
-/* harmony import */ var _shared_classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/classes/clusterer-markers.classes */ "./src/shared/classes/clusterer-markers.classes.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-/// <reference types="@types/googlemaps" />
-
-
-
-
-
-var GoogleMapDirective = /** @class */ (function () {
-    function GoogleMapDirective(elRef, _scriptService, _configService) {
-        this.elRef = elRef;
-        this._scriptService = _scriptService;
-        this._configService = _configService;
-        this._configFile = '/assets/map.config.json';
-        this._element = elRef.nativeElement;
-        this._markers = [];
-    }
-    GoogleMapDirective.prototype.ngOnInit = function () {
-        var _this = this;
-        this._input = new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('input');
-        this._labelButton = new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('div', {
-            attrs: [['title', 'Поставить метку']],
-            styles: [['z-index', '1'], ['padding', '10px'], ['background-color', 'green']]
-        });
-        this._labelButton.addChild(new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('i', {
-            classes: ['fa', 'fa-map-marker'],
-            attrs: [['aria-hidden', 'true']]
-        }).element);
-        this._lineButton = new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('div', {
-            attrs: [['title', 'Выделить участок']],
-            styles: [['z-index', '1'], ['padding', '10px'], ['background-color', 'green']]
-        });
-        this._lineButton.addChild(new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('i', {
-            classes: ['fa', 'fa-arrows-h'],
-            attrs: [['aria-hidden', 'true']]
-        }).element);
-        this._filterButton = new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('div', {
-            attrs: [['title', 'Фильтр']],
-            styles: [['z-index', '1'], ['padding', '10px'], ['background-color', 'green']]
-        });
-        this._filterButton.addChild(new _shared_classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_3__["DomElement"]('i', {
-            classes: ['fa', 'fa-filter'],
-            attrs: [['aria-hidden', 'true']]
-        }).element);
-        this._configService.load(this._configFile).subscribe(function (resolve) {
-            var mapConfig = resolve.json();
-            _this.loadMapScript(mapConfig.api.uri);
-        });
-    };
-    GoogleMapDirective.prototype.loadMapScript = function (uri) {
-        var _this = this;
-        this._scriptService.load(uri).subscribe(function () {
-            _this.initialMap();
-            _this.initialSearchBox();
-            _this._clustererMarkers = new _shared_classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_4__["ClustererMarkers"](_this._map);
-            _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._labelButton.element);
-            _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._lineButton.element);
-            _this._map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(_this._filterButton.element);
-            _this.initialEvents();
-        }, function (reject) {
-            console.log(reject);
-        });
-    };
-    GoogleMapDirective.prototype.initialMap = function () {
-        var options = {
-            zoom: 13,
-            center: {
-                lat: 53.348053,
-                lng: 83.779875
-            },
-            mapTypeControl: true,
-            mapTypeControlOptions: {
-                mapTypeIds: [
-                    google.maps.MapTypeId.ROADMAP,
-                    google.maps.MapTypeId.SATELLITE,
-                    google.maps.MapTypeId.HYBRID,
-                    google.maps.MapTypeId.TERRAIN
-                ],
-                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-                position: google.maps.ControlPosition.LEFT_TOP
-            },
-            zoomControl: true,
-            zoomControlOptions: {
-                position: google.maps.ControlPosition.RIGHT_TOP
-            },
-            scaleControl: false,
-            streetViewControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        this._map = new google.maps.Map(this._element, options);
-    };
-    GoogleMapDirective.prototype.initialSearchBox = function () {
-        this._searchBox = new google.maps.places.SearchBox(this._input.element);
-        this._map.controls[google.maps.ControlPosition.TOP_LEFT].push(this._input.element);
-    };
-    GoogleMapDirective.prototype.initialEvents = function () {
-        var _this = this;
-        this._map.addListener('bounds_changed', function () {
-            _this._searchBox.setBounds(_this._map.getBounds());
-            _this.updateClasters();
-        });
-        this._map.addListener('click', function (e) {
-            var marker = _this.placeMarker(e.latLng);
-            _this._markers.push(marker);
-        });
-        this._searchBox.addListener('places_changed', function () {
-            var places = _this._searchBox.getPlaces();
-            _this._map.setCenter(places[0].geometry.location);
-        });
-        this._labelButton.addEvent('click', function () { return console.log('_labelButton'); });
-        this._lineButton.addEvent('click', function () { return console.log('_lineButton'); });
-        this._filterButton.addEvent('click', function () { return console.log('_filterButton'); });
-        this._input.addEvent('input', function (event) { return console.log(event.target.value); });
-    };
-    GoogleMapDirective.prototype.placeMarker = function (latLng) {
-        var marker = new google.maps.Marker({
-            icon: {
-                // github icon >_<
-                path: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z",
-                fillColor: '#999',
-                fillOpacity: 1,
-                strokeColor: '#000',
-                strokeWeight: 2,
-                scale: 1,
-            },
-            position: latLng,
-            map: this._map
-        });
-        return marker;
-    };
-    GoogleMapDirective.prototype.updateClasters = function () {
-        var _a;
-        if (this._markers !== []) {
-            (_a = this._clustererMarkers).addMarkers.apply(_a, this._markers);
-            this._markers = [];
-        }
-    };
-    GoogleMapDirective = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
-            selector: '[appGoogleMap]'
-        }),
-        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"],
-            _script_service__WEBPACK_IMPORTED_MODULE_1__["ScriptService"],
-            _config_service__WEBPACK_IMPORTED_MODULE_2__["ConfigService"]])
-    ], GoogleMapDirective);
-    return GoogleMapDirective;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/script.service.ts":
-/*!***********************************!*\
-  !*** ./src/app/script.service.ts ***!
-  \***********************************/
-/*! exports provided: ScriptService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScriptService", function() { return ScriptService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ScriptService = /** @class */ (function () {
-    function ScriptService() {
-    }
-    ScriptService.prototype.load = function (uri) {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(this.loadScript(uri));
-    };
-    ScriptService.prototype.loadScript = function (uri) {
-        return new Promise(function (resolve, reject) {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.async = true;
-            script.defer = true;
-            script.src = uri;
-            script.onload = function () { return resolve({
-                loaded: true,
-                status: 'ok'
-            }); };
-            script.onerror = function (error) { return reject({
-                loaded: false,
-                status: 'error'
-            }); };
-            document.body.appendChild(script);
-            document.body.removeChild(script);
-        });
-    };
-    ScriptService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [])
-    ], ScriptService);
-    return ScriptService;
 }());
 
 
@@ -647,6 +363,293 @@ var Helper = /** @class */ (function () {
     };
     return Helper;
 }());
+
+
+/***/ }),
+
+/***/ "./src/shared/directives/google-map.directive.ts":
+/*!*******************************************************!*\
+  !*** ./src/shared/directives/google-map.directive.ts ***!
+  \*******************************************************/
+/*! exports provided: GoogleMapDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleMapDirective", function() { return GoogleMapDirective; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../classes/dom-element.classes */ "./src/shared/classes/dom-element.classes.ts");
+/* harmony import */ var _classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../classes/clusterer-markers.classes */ "./src/shared/classes/clusterer-markers.classes.ts");
+/* harmony import */ var _services_script_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/script.service */ "./src/shared/services/script.service.ts");
+/* harmony import */ var _services_config_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/config.service */ "./src/shared/services/config.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/// <reference types="@types/googlemaps" />
+
+
+
+
+
+var GoogleMapDirective = /** @class */ (function () {
+    function GoogleMapDirective(elRef, _scriptService, _configService) {
+        this.elRef = elRef;
+        this._scriptService = _scriptService;
+        this._configService = _configService;
+        this._configFile = '/assets/map.config.json';
+        this._element = elRef.nativeElement;
+        this._markers = [];
+    }
+    GoogleMapDirective.prototype.ngOnInit = function () {
+        var _this = this;
+        this._input = new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('input', {
+            classes: ['form-control', 'map-element', 'map-input'],
+            styles: [['padding', '0 .75rem']]
+        });
+        this._labelButton = new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('div', {
+            attrs: [['title', 'Поставить метку']],
+            classes: ['map-element', 'map-button']
+        });
+        this._labelButton.addChild(new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('i', {
+            classes: ['fa', 'fa-map-marker'],
+            attrs: [['aria-hidden', 'true']]
+        }).element);
+        this._lineButton = new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('div', {
+            attrs: [['title', 'Выделить участок']],
+            classes: ['map-element', 'map-button']
+        });
+        this._lineButton.addChild(new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('i', {
+            classes: ['fa', 'fa-arrows-h'],
+            attrs: [['aria-hidden', 'true']]
+        }).element);
+        this._filterButton = new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('div', {
+            attrs: [['title', 'Фильтр']],
+            classes: ['map-element', 'map-button']
+        });
+        this._filterButton.addChild(new _classes_dom_element_classes__WEBPACK_IMPORTED_MODULE_1__["DomElement"]('i', {
+            classes: ['fa', 'fa-filter'],
+            attrs: [['aria-hidden', 'true']]
+        }).element);
+        this._configService.load(this._configFile).subscribe(function (resolve) {
+            var mapConfig = resolve.json();
+            _this.loadMapScript(mapConfig.api.uri);
+        });
+    };
+    GoogleMapDirective.prototype.loadMapScript = function (uri) {
+        var _this = this;
+        this._scriptService.load(uri).subscribe(function () {
+            _this.initialMap();
+            _this.initialSearchBox();
+            _this._clustererMarkers = new _classes_clusterer_markers_classes__WEBPACK_IMPORTED_MODULE_2__["ClustererMarkers"](_this._map);
+            _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._labelButton.element);
+            _this._map.controls[google.maps.ControlPosition.LEFT_CENTER].push(_this._lineButton.element);
+            _this._map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(_this._filterButton.element);
+            _this.initialEvents();
+        }, function (reject) {
+            console.log(reject);
+        });
+    };
+    GoogleMapDirective.prototype.initialMap = function () {
+        var options = {
+            zoom: 13,
+            center: {
+                lat: 53.348053,
+                lng: 83.779875
+            },
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                mapTypeIds: [
+                    google.maps.MapTypeId.ROADMAP,
+                    google.maps.MapTypeId.SATELLITE,
+                    google.maps.MapTypeId.HYBRID,
+                    google.maps.MapTypeId.TERRAIN
+                ],
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                position: google.maps.ControlPosition.LEFT_TOP
+            },
+            zoomControl: true,
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.RIGHT_TOP
+            },
+            scaleControl: false,
+            streetViewControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this._map = new google.maps.Map(this._element, options);
+    };
+    GoogleMapDirective.prototype.initialSearchBox = function () {
+        this._searchBox = new google.maps.places.SearchBox(this._input.element);
+        this._map.controls[google.maps.ControlPosition.TOP_LEFT].push(this._input.element);
+    };
+    GoogleMapDirective.prototype.initialEvents = function () {
+        var _this = this;
+        this._map.addListener('bounds_changed', function () {
+            _this._searchBox.setBounds(_this._map.getBounds());
+            _this.updateClasters();
+        });
+        this._map.addListener('click', function (e) {
+            var marker = _this.placeMarker(e.latLng);
+            _this._markers.push(marker);
+        });
+        this._searchBox.addListener('places_changed', function () {
+            var places = _this._searchBox.getPlaces();
+            _this._map.setCenter(places[0].geometry.location);
+        });
+        this._labelButton.addEvent('click', function () { return console.log('_labelButton'); });
+        this._lineButton.addEvent('click', function () { return console.log('_lineButton'); });
+        this._filterButton.addEvent('click', function () { return console.log('_filterButton'); });
+        this._input.addEvent('input', function (event) { return console.log(event.target.value); });
+    };
+    GoogleMapDirective.prototype.placeMarker = function (latLng) {
+        var marker = new google.maps.Marker({
+            icon: {
+                // github icon >_<
+                path: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z",
+                fillColor: '#999',
+                fillOpacity: 1,
+                strokeColor: '#000',
+                strokeWeight: 2,
+                scale: 1,
+            },
+            position: latLng,
+            map: this._map
+        });
+        return marker;
+    };
+    GoogleMapDirective.prototype.updateClasters = function () {
+        var _a;
+        if (this._markers !== []) {
+            (_a = this._clustererMarkers).addMarkers.apply(_a, this._markers);
+            this._markers = [];
+        }
+    };
+    GoogleMapDirective = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
+            selector: '[appGoogleMap]'
+        }),
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"],
+            _services_script_service__WEBPACK_IMPORTED_MODULE_3__["ScriptService"],
+            _services_config_service__WEBPACK_IMPORTED_MODULE_4__["ConfigService"]])
+    ], GoogleMapDirective);
+    return GoogleMapDirective;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/shared/services/config.service.ts":
+/*!***********************************************!*\
+  !*** ./src/shared/services/config.service.ts ***!
+  \***********************************************/
+/*! exports provided: ConfigService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfigService", function() { return ConfigService; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ConfigService = /** @class */ (function () {
+    function ConfigService(_http, _location) {
+        this._http = _http;
+        this._location = _location;
+    }
+    ConfigService.prototype.load = function (configFile) {
+        return this._http.get(this._location.prepareExternalUrl(configFile)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (res) { console.log(res); return res; }));
+    };
+    ConfigService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"]])
+    ], ConfigService);
+    return ConfigService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/shared/services/script.service.ts":
+/*!***********************************************!*\
+  !*** ./src/shared/services/script.service.ts ***!
+  \***********************************************/
+/*! exports provided: ScriptService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScriptService", function() { return ScriptService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ScriptService = /** @class */ (function () {
+    function ScriptService() {
+    }
+    ScriptService.prototype.load = function (uri) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(this.loadScript(uri));
+    };
+    ScriptService.prototype.loadScript = function (uri) {
+        return new Promise(function (resolve, reject) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.defer = true;
+            script.src = uri;
+            script.onload = function () { return resolve({
+                loaded: true,
+                status: 'ok'
+            }); };
+            script.onerror = function (error) { return reject({
+                loaded: false,
+                status: 'error'
+            }); };
+            document.body.appendChild(script);
+            document.body.removeChild(script);
+        });
+    };
+    ScriptService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], ScriptService);
+    return ScriptService;
+}());
+
 
 
 /***/ }),
