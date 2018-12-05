@@ -1,6 +1,3 @@
-font-awesome
-(OFL-1.1 AND MIT)
-
 tslib
 Apache-2.0
 Apache License
