@@ -1,6 +1,6 @@
 {
-  "name": "google-map-angular-test-project",
-  "short_name": "google-map-angular-test-project",
+  "name": "google map angular test project",
+  "short_name": "map angular",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
