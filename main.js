@@ -303,7 +303,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".navbar-brand {\r\n  color: red;\r\n}\r\n\r\n.contact-phone {\r\n  max-width: 195px;\r\n}\r\n\r\n.contact-phone > div {\r\n    margin: 0;\r\n  }\r\n\r\n.phone-number a {\r\n  color: #000;\r\n  text-decoration: none;\r\n  white-space: nowrap;\r\n  font-size: 18px;\r\n  line-height: 1.2;\r\n  font-family: Helvetica,Arial,sans-serif;\r\n}\r\n\r\n.contact-phone .about {\r\n  margin-top: 6px;\r\n  color: #999;\r\n  font-size: 15px;\r\n  line-height: 1;\r\n  font-family: Helvetica,Arial,sans-serif;\r\n}\r\n\r\n.delivery {\r\n  color: #000;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtBQUNaOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVFO0lBQ0UsU0FBUztFQUNYOztBQUVGO0VBQ0UsV0FBVztFQUNYLHFCQUFxQjtFQUNyQixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQix1Q0FBdUM7QUFDekM7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsV0FBVztFQUNYLGVBQWU7RUFDZixjQUFjO0VBQ2QsdUNBQXVDO0FBQ3pDOztBQUVBO0VBQ0UsV0FBVztBQUNiIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhci1icmFuZCB7XHJcbiAgY29sb3I6IHJlZDtcclxufVxyXG5cclxuLmNvbnRhY3QtcGhvbmUge1xyXG4gIG1heC13aWR0aDogMTk1cHg7XHJcbn1cclxuXHJcbiAgLmNvbnRhY3QtcGhvbmUgPiBkaXYge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gIH1cclxuXHJcbi5waG9uZS1udW1iZXIgYSB7XHJcbiAgY29sb3I6ICMwMDA7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgZm9udC1zaXplOiAxOHB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAxLjI7XHJcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uY29udGFjdC1waG9uZSAuYWJvdXQge1xyXG4gIG1hcmdpbi10b3A6IDZweDtcclxuICBjb2xvcjogIzk5OTtcclxuICBmb250LXNpemU6IDE1cHg7XHJcbiAgbGluZS1oZWlnaHQ6IDE7XHJcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uZGVsaXZlcnkge1xyXG4gIGNvbG9yOiAjMDAwO1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -314,7 +314,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n  <a class=\"navbar-brand\" href=\"#\">Планета гриль</a>\r\n  <ul class=\"d-none d-md-block navbar-nav mr-auto\">\r\n    <li class=\"nav-item active\">\r\n      <a class=\"nav-link\" href=\"#\">г. Барнаул, ул. Крупской, 97а<span class=\"sr-only\">(current)</span></a>\r\n    </li>\r\n  </ul>\r\n  <form class=\"telephone form-inline my-2 my-lg-0\">\r\n    <div class=\"h3\">8-800-200-0600</div>\r\n    <div class=\"h6\">У нас есть доставка</div>\r\n  </form>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n  <div class=\"container\">\r\n    <a class=\"navbar-brand\" href=\"#\">Планета гриль</a>\r\n    <ul class=\"d-none d-md-block navbar-nav mr-auto\">\r\n      <li class=\"nav-item delivery active\">\r\n        <a class=\"nav-link\" href=\"#\">г. Барнаул, ул. Крупской, 97а<span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n    </ul>\r\n    <form class=\"contact-phone form-inline my-2 my-lg-0\">\r\n      <div class=\"h3 phone-number\">\r\n        <a href=\"tel:88002000600\">8 (800) 200-06-00</a>\r\n      </div>\r\n      <div class=\"h6 about\">У нас есть доставка</div>\r\n    </form>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -426,7 +426,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".nav-item:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2aWdhdGlvbi9uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvbmF2aWdhdGlvbi9uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmF2LWl0ZW06aG92ZXIge1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG4iXX0= */"
+module.exports = ".nav-item:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.nav-item::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  left: 0;\r\n  bottom: -1px;\r\n  width: 100%;\r\n  border-bottom: 1px solid #e6e6e6;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2aWdhdGlvbi9uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCxnQ0FBZ0M7QUFDbEMiLCJmaWxlIjoic3JjL2FwcC9uYXZpZ2F0aW9uL25hdmlnYXRpb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXYtaXRlbTpob3ZlciB7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4ubmF2LWl0ZW06OmJlZm9yZSB7XHJcbiAgY29udGVudDogXCJcIjtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogMDtcclxuICBib3R0b206IC0xcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -437,7 +437,7 @@ module.exports = ".nav-item:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n/*# source
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light sticky-top\">\r\n  <!--<a class=\"navbar-brand\" href=\"#\">Планета гриль</a>-->\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul *ngIf=\"product\" class=\"navbar-nav\">\r\n      <li class=\"nav-item\" *ngFor=\"let category of product.categorys\">\r\n        <a class=\"nav-link\" (click)=\"onClick($event, category.id)\">{{category.name}}<span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light sticky-top\">\r\n  <div class=\"container\">\r\n    <!--<a class=\"navbar-brand\" href=\"#\">Планета гриль</a>-->\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n      <ul *ngIf=\"product\" class=\"navbar-nav\">\r\n        <li class=\"nav-item\" *ngFor=\"let category of product.categorys\">\r\n          <a class=\"nav-link\" (click)=\"onClick($event, category.id)\">{{category.name}}<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -497,7 +497,7 @@ var NavigationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".image-sale-container {\r\n  position: relative;\r\n  overflow: hidden;\r\n  height: 292px;\r\n}\r\n\r\n.img-sale {\r\n  height: 292px;\r\n  width: auto;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n}\r\n\r\n.sale {\r\n  padding-bottom: 2rem;\r\n}\r\n\r\n.card {\r\n  border: none;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1jYXJ0L3Byb2R1Y3QtY2FydC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztFQUNULHdDQUFnQztVQUFoQyxnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWNhcnQvcHJvZHVjdC1jYXJ0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2Utc2FsZS1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIGhlaWdodDogMjkycHg7XHJcbn1cclxuXHJcbi5pbWctc2FsZSB7XHJcbiAgaGVpZ2h0OiAyOTJweDtcclxuICB3aWR0aDogYXV0bztcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgbGVmdDogNTAlO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG59XHJcblxyXG4uc2FsZSB7XHJcbiAgcGFkZGluZy1ib3R0b206IDJyZW07XHJcbn1cclxuXHJcbi5jYXJkIHtcclxuICBib3JkZXI6IG5vbmU7XHJcbn1cclxuIl19 */"
+module.exports = ".image-sale-container {\r\n  position: relative;\r\n  overflow: hidden;\r\n  height: 292px;\r\n}\r\n\r\n.img-sale {\r\n  height: 292px;\r\n  width: auto;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n}\r\n\r\n.sale {\r\n  padding: 0 0 2rem 0;\r\n}\r\n\r\n.card {\r\n  border: none;\r\n}\r\n\r\n.card-body {\r\n  padding: 0.25rem;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvZHVjdC1jYXJ0L3Byb2R1Y3QtY2FydC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztFQUNULHdDQUFnQztVQUFoQyxnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9wcm9kdWN0LWNhcnQvcHJvZHVjdC1jYXJ0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2Utc2FsZS1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIGhlaWdodDogMjkycHg7XHJcbn1cclxuXHJcbi5pbWctc2FsZSB7XHJcbiAgaGVpZ2h0OiAyOTJweDtcclxuICB3aWR0aDogYXV0bztcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgbGVmdDogNTAlO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG59XHJcblxyXG4uc2FsZSB7XHJcbiAgcGFkZGluZzogMCAwIDJyZW0gMDtcclxufVxyXG5cclxuLmNhcmQge1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG5cclxuLmNhcmQtYm9keSB7XHJcbiAgcGFkZGluZzogMC4yNXJlbTtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -629,20 +629,21 @@ var FileService = /** @class */ (function () {
         this._http = _http;
         this._location = _location;
     }
+    FileService_1 = FileService;
     FileService.prototype.load = function (file) {
-        var _this = this;
-        if (this._fileData && this._fileData[file]) {
+        if (FileService_1._fileData && FileService_1._fileData[file]) {
             console.log('get old');
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(this._fileData[file]);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(FileService_1._fileData[file]);
         }
         return this._http.get(this._location.prepareExternalUrl(file)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (res) {
-            if (!_this._fileData)
-                _this._fileData = {};
-            _this._fileData[file] = res;
+            if (!FileService_1._fileData)
+                FileService_1._fileData = {};
+            FileService_1._fileData[file] = res;
             return res;
         }));
     };
-    FileService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    var FileService_1;
+    FileService = FileService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
             providedIn: 'root'
         }),
