@@ -68,7 +68,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".contact-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 4rem;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.telephone {\r\n  max-width: 250px;\r\n}\r\n\r\n.space {\r\n  width: 100%;\r\n  height: 3rem;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhY3QtY29udGFpbmVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgaGVpZ2h0OiA0cmVtO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi50ZWxlcGhvbmUge1xyXG4gIG1heC13aWR0aDogMjUwcHg7XHJcbn1cclxuXHJcbi5zcGFjZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAzcmVtO1xyXG59XHJcbiJdfQ== */"
+module.exports = ".contact-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 4rem;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.telephone {\r\n  max-width: 250px;\r\n}\r\n\r\n.space {\r\n  width: 100%;\r\n  height: 3rem;\r\n}\r\n\r\n.map-container {\r\n  width: 100%;\r\n  height: 400px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWN0LWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGhlaWdodDogNHJlbTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4udGVsZXBob25lIHtcclxuICBtYXgtd2lkdGg6IDI1MHB4O1xyXG59XHJcblxyXG4uc3BhY2Uge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogM3JlbTtcclxufVxyXG5cclxuLm1hcC1jb250YWluZXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogNDAwcHg7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ module.exports = ".contact-container {\r\n  display: flex;\r\n  flex-direction: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\r\n<app-navigation></app-navigation>\r\n<app-carusel></app-carusel>\r\n\r\n<div class=\"container-fluid space\">\r\n  <div class=\"contact-container\">\r\n    <div class=\"h2\">Текст</div>\r\n  </div>\r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"container-fluid space\">\r\n  <div class=\"contact-container\">\r\n    <div class=\"h2\">8-800-200-0600</div>\r\n  </div>\r\n</div>\r\n\r\n<app-footer></app-footer>\r\n"
+module.exports = "<app-header></app-header>\r\n<app-navigation></app-navigation>\r\n<app-carusel></app-carusel>\r\n\r\n<div class=\"container-fluid space\">\r\n  <div class=\"contact-container\">\r\n    <div class=\"h2\">Текст</div>\r\n  </div>\r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"container-fluid space\">\r\n  <div class=\"contact-container\">\r\n    <div class=\"h2\">8-800-200-0600</div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"map-container\" appGoogleMap></div>\r\n\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -133,12 +133,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm5/service-worker.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
-/* harmony import */ var _carusel_carusel_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./carusel/carusel.component */ "./src/app/carusel/carusel.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _shared_directives_google_map_directive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/directives/google-map.directive */ "./src/shared/directives/google-map.directive.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
+/* harmony import */ var _carusel_carusel_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./carusel/carusel.component */ "./src/app/carusel/carusel.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./product-cart/product-cart.component */ "./src/app/product-cart/product-cart.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+
 
 
 
@@ -159,13 +161,14 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
-                _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_9__["NavigationComponent"],
-                _carusel_carusel_component__WEBPACK_IMPORTED_MODULE_10__["CaruselComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+                _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
+                _carusel_carusel_component__WEBPACK_IMPORTED_MODULE_11__["CaruselComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
-                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_12__["ProductCartComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
+                _shared_directives_google_map_directive__WEBPACK_IMPORTED_MODULE_8__["GoogleMapDirective"],
+                _product_cart_product_cart_component__WEBPACK_IMPORTED_MODULE_13__["ProductCartComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -602,6 +605,44 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 
 /***/ }),
 
+/***/ "./src/shared/directives/google-map.directive.ts":
+/*!*******************************************************!*\
+  !*** ./src/shared/directives/google-map.directive.ts ***!
+  \*******************************************************/
+/*! exports provided: GoogleMapDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleMapDirective", function() { return GoogleMapDirective; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_map_element_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/map-element.service */ "./src/shared/service/map-element.service.ts");
+
+
+
+var GoogleMapDirective = /** @class */ (function () {
+    function GoogleMapDirective(elRef, _mapElementService) {
+        this._mapElementService = _mapElementService;
+        this._element = elRef.nativeElement;
+    }
+    GoogleMapDirective.prototype.ngOnInit = function () {
+        this._mapElementService.initilize(this._element);
+    };
+    GoogleMapDirective = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"])({
+            selector: '[appGoogleMap]'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
+            _service_map_element_service__WEBPACK_IMPORTED_MODULE_2__["MapElementService"]])
+    ], GoogleMapDirective);
+    return GoogleMapDirective;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/shared/service/file.service.ts":
 /*!********************************************!*\
   !*** ./src/shared/service/file.service.ts ***!
@@ -651,6 +692,139 @@ var FileService = /** @class */ (function () {
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["Location"]])
     ], FileService);
     return FileService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/shared/service/map-element.service.ts":
+/*!***************************************************!*\
+  !*** ./src/shared/service/map-element.service.ts ***!
+  \***************************************************/
+/*! exports provided: MapElementService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapElementService", function() { return MapElementService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _file_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./file.service */ "./src/shared/service/file.service.ts");
+/* harmony import */ var _script_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./script.service */ "./src/shared/service/script.service.ts");
+/// <reference types="@types/googlemaps" />
+
+
+
+
+var MapElementService = /** @class */ (function () {
+    function MapElementService(_scriptService, _fileService) {
+        this._scriptService = _scriptService;
+        this._fileService = _fileService;
+        this._configFile = '/assets/map.config.json';
+    }
+    MapElementService.prototype.initilize = function (element) {
+        this._element = element;
+        this.initilizeMap();
+    };
+    MapElementService.prototype.initilizeMap = function () {
+        var _this = this;
+        this._fileService.load(this._configFile).subscribe(function (resolve) {
+            var mapConfig = resolve.json();
+            _this.removeRobotoFromHead();
+            _this.loadMapScript(mapConfig.api.uri);
+        });
+    };
+    MapElementService.prototype.removeRobotoFromHead = function () {
+        var head = document.head;
+        var insertBefore = head.insertBefore;
+        var removed = false;
+        head.insertBefore = function (newElement, referenceElement) {
+            var element = newElement;
+            if (element && element.href && element.href.indexOf('https://fonts.googleapis.com/css?family=Roboto') === 0) {
+                removed = true;
+                return;
+            }
+            insertBefore.call(head, newElement, referenceElement);
+            if (removed) {
+                head.insertBefore = insertBefore;
+                return;
+            }
+            return newElement;
+        };
+    };
+    MapElementService.prototype.loadMapScript = function (uri) {
+        var _this = this;
+        this._scriptService.load(uri).subscribe(function () { _this.createMap(); }, function (reject) { console.log(reject); });
+    };
+    MapElementService.prototype.createMap = function () {
+        var options = {
+            zoom: 18,
+            center: { lat: 53.34186247835682, lng: 83.76607192698907 },
+            mapTypeControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            clickableIcons: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            gestureHandling: 'none'
+        };
+        this._map = new google.maps.Map(this._element, options);
+    };
+    MapElementService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_script_service__WEBPACK_IMPORTED_MODULE_3__["ScriptService"],
+            _file_service__WEBPACK_IMPORTED_MODULE_2__["FileService"]])
+    ], MapElementService);
+    return MapElementService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/shared/service/script.service.ts":
+/*!**********************************************!*\
+  !*** ./src/shared/service/script.service.ts ***!
+  \**********************************************/
+/*! exports provided: ScriptService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScriptService", function() { return ScriptService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
+
+
+var ScriptService = /** @class */ (function () {
+    function ScriptService() {
+    }
+    ScriptService.prototype.load = function (uri) {
+        return this.loadScript(uri);
+    };
+    ScriptService.prototype.loadScript = function (uri) {
+        var body = document.body;
+        var script = Object.assign(document.createElement('script'), { type: 'text/javascript', async: true, defer: true, src: uri });
+        var errorEvents$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(script, 'error');
+        var loadEvents$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(script, 'load')
+            .pipe(function (e) { body.appendChild(script); return e; })
+            .pipe(function (e) { body.removeChild(script); return e; });
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(loadEvents$, errorEvents$);
+    };
+    ScriptService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ScriptService);
+    return ScriptService;
 }());
 
 

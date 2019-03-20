@@ -1,0 +1,6 @@
+{
+  "api": {
+    "name": "googleMap",
+    "uri": "https://maps.googleapis.com/maps/api/js?v=weekly&libraries=places,geometry,visualization&key=AIzaSyArhXIMVjmk7mp9wmVNYsUuTdCcWn7bycE"
+  }
+}
