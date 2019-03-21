@@ -1,4 +1,21 @@
 {
+  "caruselItems": [
+    {
+      "image": "./assets/files/bezdrojjevoi-lavash_1526654975_1_og.jpg",
+      "title": "Первый заголовок",
+      "text": "Описание какое-то"
+    },
+    {
+      "image": "./assets/files/Fast_food_Hot_dog_492496_2880x1800.jpg",
+      "title": "Второй заголовок",
+      "text": "Какое-то описание"
+    },
+    {
+      "image": "./assets/files/kurjach_nagetsi_retsept_z_foto_1.jpg",
+      "title": "Третий заголовок",
+      "text": "Здесь будет описание"
+    }
+  ],
   "categorys": [
     {
       "id": "category1",
