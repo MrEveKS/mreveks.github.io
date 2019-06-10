@@ -1,2 +1,0 @@
-# mreveks.github.io
-hosting
